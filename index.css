@@ -255,6 +255,8 @@ footer {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    padding-top: 60px;
+    /* Space for the close button or header */
 }
 
 .mobile-nav.active {
@@ -298,6 +300,32 @@ footer {
         display: flex;
     }
 
+    .hero {
+        min-height: 100vh;
+        height: auto;
+        padding-top: 120px;
+        padding-bottom: 4rem;
+        justify-content: flex-start;
+        /* Align content to top to avoid cutting off */
+    }
+
+    /* Fix hero image overlap */
+    .hero+.container .room-image {
+        margin-top: 2rem !important;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    /* Reduce vertical spacing */
+    .context-section,
+    .rooms-section,
+    footer {
+        padding: 4rem 0;
+    }
+
+    .room-item {
+        margin-bottom: 4rem;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
         line-height: 1.2;
@@ -310,9 +338,10 @@ footer {
 
     .section-title {
         font-size: 1.7rem;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
+        word-wrap: normal;
+        overflow-wrap: normal;
+        hyphens: none;
+        margin-bottom: 2rem;
     }
 
     .room-item {
@@ -333,8 +362,14 @@ footer {
     }
 
     .section-tag {
-        font-size: 0.7rem;
-        letter-spacing: 1px;
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+        display: block;
+        /* Ensure visibility */
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        /* Improve contrast */
     }
 
     .btn {
