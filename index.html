@@ -21,8 +21,19 @@
                 <a href="#context">Контекст</a>
                 <a href="#rooms">Комнаты</a>
             </nav>
+            <button class="mobile-menu-btn" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+                ☰
+            </button>
         </div>
     </header>
+
+    <div class="mobile-nav">
+        <a href="#about" onclick="document.querySelector('.mobile-nav').classList.remove('active')">Система</a>
+        <a href="#context" onclick="document.querySelector('.mobile-nav').classList.remove('active')">Контекст</a>
+        <a href="#rooms" onclick="document.querySelector('.mobile-nav').classList.remove('active')">Комнаты</a>
+        <button onclick="document.querySelector('.mobile-nav').classList.remove('active')"
+            style="background:none; border:none; color: white; font-size: 2rem; margin-top: 2rem;">✕</button>
+    </div>
 
     <section class="hero">
         <div class="container">
