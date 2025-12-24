@@ -64,6 +64,10 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    min-height: 800px;
+    /* Prevent collapse on short screens */
+    padding-bottom: 6rem;
+    /* Space for the overlap */
     background: radial-gradient(circle at center, rgba(34, 211, 238, 0.1) 0%, transparent 70%);
 }
 
