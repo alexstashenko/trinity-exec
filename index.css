@@ -286,8 +286,8 @@ footer {
         padding: 0 1.5rem;
     }
 
-    header .container nav.footer-nav {
-        display: none;
+    header nav.footer-nav {
+        display: none !important;
     }
 
     .mobile-menu-btn {
@@ -309,7 +309,10 @@ footer {
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.7rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
     }
 
     .room-item {
@@ -337,6 +340,9 @@ footer {
     .btn {
         width: 100%;
         display: block;
-        padding: 1rem;
+        padding: 1rem !important;
+        /* Override inline styles */
+        white-space: nowrap;
+        text-align: center;
     }
 }
